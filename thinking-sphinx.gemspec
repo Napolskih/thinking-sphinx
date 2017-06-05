@@ -23,15 +23,24 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'activerecord', '>= 3.0.3'
   s.add_runtime_dependency 'riddle',       '>= 1.5.3'
   s.add_runtime_dependency 'builder',      '>= 2.1.2'
+  s.add_runtime_dependency 'term-ansicolor', '~> 1.3.0'
+  s.add_runtime_dependency 'tins',          '~> 1.6.0'
+
+  s.add_runtime_dependency 'pg', '~> 0.18.0'
+  s.add_runtime_dependency 'mysql2', '~> 0.3.7'
 
   s.add_development_dependency 'actionpack',    '>= 3.0.3'
-  s.add_development_dependency 'appraisal',     '0.4.0'
+  s.add_development_dependency 'appraisal',     '~> 1.0.2'
   s.add_development_dependency 'cucumber',      '1.0.2'
   s.add_development_dependency 'faker',         '0.3.1'
-  s.add_development_dependency 'rake',          '>= 0.9.2'
+  s.add_development_dependency 'rake',          '>= 0.9.2', '< 11.0'
   s.add_development_dependency 'rspec',         '2.6.0'
   s.add_development_dependency 'will_paginate', '3.0'
   s.add_development_dependency 'yard',          '>= 0.7.2'
+  #s.add_development_dependency 'tins',          '~> 1.6.0'
+  #s.add_development_dependency 'term-ansicolor', '~> 1.3.0'
+  #s.add_development_dependency 'pg', '>= 0.11.0'
+  #s.add_development_dependency 'mysql2', '>= 0.3.7'
 
   s.post_install_message = %q{If you're upgrading, you should read this:
 http://pat.github.com/ts/en/upgrading.html

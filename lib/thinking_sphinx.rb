@@ -1,7 +1,7 @@
 require 'thread'
-#require 'active_record'
+require 'active_record'
 
-require "rails"
+#require "rails"
 #require 'rails/railtie'
 
 require 'yaml'
